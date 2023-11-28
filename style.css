@@ -1,0 +1,155 @@
+html {
+  height: 125%;
+  width: 100%;
+  background: rgb(70,76,85);
+  background: linear-gradient(63deg, rgba(70,76,85,1) 12%, rgba(63,72,82,1) 48%, rgba(78,82,97,1) 83%);
+}
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans Tangsa', sans-serif;
+  color: #eae1e1;
+  width: 100%;
+  height: 100%;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-left: 8%;
+  width: 600px;
+  height: 550px;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#grid-size {
+  width: 160px;
+  margin-left: 0;
+}
+
+.parentDiv {
+  display: flex;
+  background-color: white;
+}
+
+
+.main-content {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  width: 10%;
+  padding: 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+.color-input-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.custom-color-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+
+.btn {
+  transition-duration: 0.4s;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 25px;
+  text-align: center;
+  min-width: 180px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ctrls {
+  margin: 10px;
+}
+
+@media (max-width: 990px) {
+  .mainDiv {
+    width: 500px;
+    height: 500px;
+    margin-left: 13%;
+  }
+}
+
+@media (max-width: 880px) {
+  .mainDiv {
+    width: 400px;
+    height: 500px;
+    margin-left: 12%;
+  }
+}
+
+@media (max-width: 650px) {
+  .mainDiv {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+  }
+  .controls {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .sl {
+    margin-top: 10px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: white;
+}
